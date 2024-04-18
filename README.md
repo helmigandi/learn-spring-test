@@ -3,7 +3,7 @@
 Software Testing with Spring Boot from Amigoscode.
 
 - Status: __On progress__
-- Progress video: Cloning Repo and Getting Started
+- Progress video: Initial Customer Impl
 
 ## Sources
 

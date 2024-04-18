@@ -1,9 +1,17 @@
+version: "3.8"  # Specify the Docker Compose version
+
 services:
   postgres:
-    image: 'postgres:latest'
+    image: postgres:16.2  # Use the official Postgres image
+    container_name: postgres_dev
     environment:
-      - 'POSTGRES_DB=mydatabase'
-      - 'POSTGRES_PASSWORD=secret'
-      - 'POSTGRES_USER=myuser'
+      POSTGRES_PASSWORD: supersecret  # Set your desired password (replace with a strong password)
+      POSTGRES_USER: postgres_dev  # Username for the database (can be changed)
+      POSTGRES_DB: postgres_dev  # Database name (can be changed)
     ports:
-      - '5432'
+      - "5432:5432"  # Map the container port 5432 to the host port 5432
+    volumes:
+      - postgres_data:/var/lib/postgresql/data  # Persist data volume
+
+volumes:
+  postgres_data: {}  # Define an empty volume for persistent data

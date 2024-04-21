@@ -18,3 +18,4 @@ Software Testing with Spring Boot from Amigoscode.
 
 - [Software testing video course](https://app.amigoscode.com/p/software-testing)
 - [Software testing Github repository](https://github.com/amigoscode/software-testing)
+- [AssertJ Documentation](https://assertj.github.io/doc)
